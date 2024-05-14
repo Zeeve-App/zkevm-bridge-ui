@@ -108,6 +108,12 @@ export const useBridgeFormStyles = createUseStyles((theme: Theme) => ({
     "&:hover": {
       backgroundColor: theme.palette.grey.main,
     },
+    "&:hover h2": {
+      color: theme.palette.black,
+    },
+    "&:hover path": {
+      fill: theme.palette.black,
+    },
     alignItems: "center",
     backgroundColor: theme.palette.grey.light,
     border: "none",
@@ -115,7 +121,7 @@ export const useBridgeFormStyles = createUseStyles((theme: Theme) => ({
     cursor: "pointer",
     display: "flex",
     gap: theme.spacing(1),
-    padding: [theme.spacing(1), theme.spacing(1.25)],
+    // padding: [theme.spacing(1), theme.spacing(1.25)],
     transition: theme.hoverTransition,
     [theme.breakpoints.upSm]: {
       backgroundColor: theme.palette.grey.light,

@@ -21,7 +21,7 @@ export const useNetworkErrorStyles = createUseStyles((theme: Theme) => ({
     width: "100%",
   },
   textBox: {
-    backgroundColor: theme.palette.white,
+    backgroundColor: theme.palette.background,
     borderRadius: 8,
     display: "flex",
     flexDirection: "column",

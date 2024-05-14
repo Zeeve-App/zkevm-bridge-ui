@@ -29,7 +29,7 @@ export const useActivityStyles = createUseStyles((theme: Theme) => ({
       marginLeft: theme.spacing(2),
     },
     alignItems: "center",
-    backgroundColor: "transparent",
+    backgroundColor: theme.palette.background,
     borderRadius: 8,
     cursor: "pointer",
     display: "flex",
@@ -46,18 +46,18 @@ export const useActivityStyles = createUseStyles((theme: Theme) => ({
     padding: [theme.spacing(0), theme.spacing(1)],
   },
   filterBoxSelected: {
-    backgroundColor: theme.palette.white,
+    backgroundColor: theme.palette.primary.main,
     color: theme.palette.grey.dark,
   },
   filterNumberBox: {
     alignItems: "center",
-    backgroundColor: theme.palette.grey.main,
+    backgroundColor: theme.palette.background,
     borderRadius: 6,
     display: "flex",
     padding: [theme.spacing(0.25), theme.spacing(1)],
   },
   filterNumberBoxSelected: {
-    backgroundColor: theme.palette.grey.light,
+    backgroundColor: theme.palette.primary.main,
   },
   stickyContent: {
     background: theme.palette.grey.light,

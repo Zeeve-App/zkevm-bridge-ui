@@ -16,6 +16,9 @@ export const useListStyles = createUseStyles((theme: Theme) => ({
     "&:hover": {
       background: theme.palette.grey.main,
     },
+    "&:hover p": {
+      color: theme.palette.black,
+    },
     "&:not(:first-of-type)": {
       marginTop: theme.spacing(1),
     },

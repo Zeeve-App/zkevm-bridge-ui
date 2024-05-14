@@ -7,6 +7,9 @@ export const useWalletListStyles = createUseStyles((theme: Theme) => ({
     "&:hover": {
       background: "#e2e5ee",
     },
+    "&:hover p": {
+      color: theme.palette.black,
+    },
     alignItems: "center",
     cursor: "pointer",
     display: "flex",

@@ -7,6 +7,12 @@ export const useTokenInfoStyles = createUseStyles((theme: Theme) => ({
     "&:hover": {
       backgroundColor: theme.palette.grey.main,
     },
+    "&:hover p": {
+      color: theme.palette.black,
+    },
+    "&:hover path": {
+      fill: theme.palette.black,
+    },
     backgroundColor: theme.palette.grey.light,
     border: "none",
     borderRadius: 9,

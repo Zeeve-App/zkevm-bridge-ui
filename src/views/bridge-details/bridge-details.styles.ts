@@ -49,6 +49,12 @@ export const useBridgeDetailsStyles = createUseStyles((theme: Theme) => ({
     "&:hover": {
       backgroundColor: theme.palette.grey.main,
     },
+    "&:hover p": {
+      color: theme.palette.black,
+    },
+    "&:hover path": {
+      fill: theme.palette.black,
+    },
     alignItems: "center",
     backgroundColor: theme.palette.grey.light,
     border: "none",
@@ -95,6 +101,7 @@ export const useBridgeDetailsStyles = createUseStyles((theme: Theme) => ({
     },
   },
   tokenIcon: {
+    background: theme.palette.white,
     height: 48,
     margin: [theme.spacing(1), 0, theme.spacing(2)],
     width: 48,

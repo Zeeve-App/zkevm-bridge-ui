@@ -249,7 +249,7 @@ export const TokenList: FC<TokenListProps> = ({
                         <TokenBalance
                           spinnerSize={16}
                           token={token}
-                          typographyProps={{ className: classes.tokenBalance, type: "body2" }}
+                          typographyProps={{ type: "body2" }}
                         />
                       </div>
                     </div>

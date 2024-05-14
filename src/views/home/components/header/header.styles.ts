@@ -30,7 +30,14 @@ export const useHeaderStyles = createUseStyles((theme: Theme) => ({
     "&:hover": {
       backgroundColor: theme.palette.grey.main,
     },
+    "&:hover p": {
+      color: theme.palette.black,
+    },
+    "&:hover path": {
+      fill: theme.palette.black,
+    },
     alignItems: "center",
+    backgroundColor: theme.palette.primary.main,
     borderRadius: 8,
     display: "flex",
     gap: theme.spacing(1),

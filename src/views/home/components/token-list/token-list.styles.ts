@@ -64,7 +64,9 @@ export const useTokenListStyles = createUseStyles((theme: Theme) => ({
     marginRight: theme.spacing(1.25),
   },
   searchInput: {
+    background: "unset",
     border: 0,
+    color: theme.palette.white,
     outline: 0,
     padding: [theme.spacing(2), 0],
     width: "100%",
@@ -76,15 +78,15 @@ export const useTokenListStyles = createUseStyles((theme: Theme) => ({
     marginBottom: theme.spacing(2),
     width: "100%",
   },
-  tokenBalance: {
-    color: theme.palette.black,
-  },
   tokenBalanceWrapper: {
     marginLeft: "auto",
   },
   tokenButton: {
     "&:hover": {
       background: theme.palette.grey.main,
+    },
+    "&:hover p": {
+      color: theme.palette.black,
     },
     alignItems: "center",
     background: theme.palette.grey.light,

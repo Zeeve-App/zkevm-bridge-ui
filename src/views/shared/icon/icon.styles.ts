@@ -7,6 +7,7 @@ export const useIconStyles = createUseStyles({
   }),
   roundedWrapper: {
     alignItems: "center",
+    background: "white",
     borderRadius: "50%",
     display: "flex",
     justifyContent: "center",

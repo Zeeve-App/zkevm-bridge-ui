@@ -4,7 +4,7 @@ import { Theme } from "src/styles/theme";
 
 export const useInfoBannerStyles = createUseStyles((theme: Theme) => ({
   infoBanner: {
-    background: theme.palette.grey.main,
+    background: theme.palette.background,
     borderRadius: "8px",
     display: "flex",
     gap: theme.spacing(1),
@@ -13,6 +13,6 @@ export const useInfoBannerStyles = createUseStyles((theme: Theme) => ({
     width: "100%",
   },
   message: {
-    color: theme.palette.black,
+    color: theme.palette.white,
   },
 }));

@@ -7,8 +7,14 @@ export const useNetworkSelectorStyles = createUseStyles((theme: Theme) => ({
     "&:hover": {
       backgroundColor: theme.palette.grey.main,
     },
+    "&:hover p": {
+      color: theme.palette.black,
+    },
+    "&:hover path": {
+      fill: theme.palette.black,
+    },
     alignItems: "center",
-    background: theme.palette.white,
+    background: theme.palette.primary.main,
     border: "none",
     borderRadius: 8,
     cursor: "pointer",

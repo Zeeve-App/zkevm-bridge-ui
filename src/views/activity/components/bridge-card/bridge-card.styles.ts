@@ -20,6 +20,9 @@ export const useBridgeCardStyles = createUseStyles((theme: Theme) => ({
     "&:hover": {
       backgroundColor: theme.palette.grey.main,
     },
+    "&:hover p": {
+      color: theme.palette.black,
+    },
     cursor: "pointer",
     margin: "auto",
     maxWidth: theme.maxWidth,
@@ -104,6 +107,7 @@ export const useBridgeCardStyles = createUseStyles((theme: Theme) => ({
     display: "flex",
   },
   tokenIcon: {
+    background: theme.palette.white,
     marginRight: theme.spacing(1),
   },
   top: {
