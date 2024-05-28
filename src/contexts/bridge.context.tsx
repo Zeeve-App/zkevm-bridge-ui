@@ -864,11 +864,12 @@ const BridgeProvider: FC<PropsWithChildren> = (props) => {
         }
       );
 
-      const isTokenNativeOfToChain = token.chainId === to.chainId;
-      const isMetadataRequired = !isTokenEther(token) && !isTokenNativeOfToChain;
-      const metadata = isMetadataRequired
-        ? await getErc20TokenEncodedMetadata({ chain: from, token })
-        : "0x";
+      // const isTokenNativeOfToChain = token.chainId === to.chainId;
+      // const isMetadataRequired = !isTokenEther(token) && !isTokenNativeOfToChain;
+      // const metadata = isMetadataRequired
+      //   ? await getErc20TokenEncodedMetadata({ chain: from, token })
+      //   : "0x";
+      const metadata = await getErc20TokenEncodedMetadata({ chain: to, token });
 
       const executeClaim = () =>
         contract
