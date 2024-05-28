@@ -131,7 +131,7 @@ export const getChains = ({
         explorerUrl: polygonZkEVM.explorerUrl,
         Icon: PolygonZkEVMChainIcon,
         key: "polygon-zkevm",
-        name: "TERNOA Testnet",
+        name: "Ternoa zkEVM+ Testnet",
         nativeCurrency: {
           decimals: 18,
           name: "Capsule Coin",
