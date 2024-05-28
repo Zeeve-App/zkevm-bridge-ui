@@ -39,7 +39,7 @@ export function getEthereumNetworkName(chainId: number): string {
 export function getDeploymentName(chain: Chain): string | undefined {
   switch (chain.chainId) {
     case EthereumChainId.MAINNET: {
-      return "Mainnet Beta";
+      return "Devnet";
     }
     case EthereumChainId.GOERLI: {
       return "Testnet";
