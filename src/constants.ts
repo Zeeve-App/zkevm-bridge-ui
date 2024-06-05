@@ -2,7 +2,7 @@ import { StaticJsonRpcProvider } from "@ethersproject/providers";
 import { ethers } from "ethers";
 
 import { ReactComponent as EthChainIcon } from "src/assets/icons/chains/ethereum.svg";
-import { ReactComponent as PolygonZkEVMChainIcon } from "src/assets/icons/chains/ternoa.svg";
+import { ReactComponent as PolygonZkEVMChainIcon } from "src/assets/icons/chains/pentagon.svg";
 import { Chain, Currency, EthereumChain, ProviderError, Token, ZkEVMChain } from "src/domain";
 import { ProofOfEfficiency__factory } from "src/types/contracts/proof-of-efficiency";
 import { getEthereumNetworkName } from "src/utils/labels";
@@ -131,11 +131,11 @@ export const getChains = ({
         explorerUrl: polygonZkEVM.explorerUrl,
         Icon: PolygonZkEVMChainIcon,
         key: "polygon-zkevm",
-        name: "Ternoa zkEVM+ Testnet",
+        name: "Pentagon zkEVM+ Testnet",
         nativeCurrency: {
           decimals: 18,
-          name: "Capsule Coin",
-          symbol: "CAPS",
+          name: "Ether",
+          symbol: "ETH",
         },
         networkId: polygonZkEVM.networkId,
         provider: polygonZkEVMProvider,
