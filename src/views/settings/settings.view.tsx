@@ -41,7 +41,7 @@ export const Settings: FC = () => {
     <div className={classes.contentWrapper}>
       <Header
         backTo={{ routeKey: "home" }}
-        Subtitle={<Typography type="body2">Pentagon zkEVM+ Testnet Bridge v{bridgeVersion}</Typography>}
+        Subtitle={<Typography type="body2">Ternoa zkEVM+ Testnet Bridge v{bridgeVersion}</Typography>}
         title="Settings"
       />
       <Card className={classes.card}>

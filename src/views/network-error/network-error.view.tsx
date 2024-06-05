@@ -2,7 +2,7 @@ import { FC, useEffect } from "react";
 import { Navigate, useLocation, useNavigate } from "react-router-dom";
 
 import { providerError } from "src/adapters/error";
-import PolygonZkEVMLogo from "src/assets/logo.png";
+import { ReactComponent as PolygonZkEVMLogo } from "src/assets/ternoa.svg";
 import { useEnvContext } from "src/contexts/env.context";
 import { ProviderError } from "src/domain";
 import { routes } from "src/routes";
@@ -25,13 +25,13 @@ export const NetworkError: FC = () => {
 
   return parsedProviderError.success ? (
     <div className={classes.wrapper}>
-      <img className={classes.logo} src={PolygonZkEVMLogo} />
+      <PolygonZkEVMLogo className={classes.logo} />
       <div className={classes.textBox}>
         <Typography type="h1">Network Error</Typography>
         <Typography type="body1">
           {parsedProviderError.data === ProviderError.Ethereum
             ? "We cannot connect to the Ethereum node."
-            : "We cannot connect to the Pentagon zkEVM+ Testnet node."}
+            : "We cannot connect to the Ternoa zkEVM+ Testnet node."}
         </Typography>
         <Typography type="body2">It will be operative again soon</Typography>
       </div>
