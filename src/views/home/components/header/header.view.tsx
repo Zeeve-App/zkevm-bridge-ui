@@ -1,9 +1,9 @@
 import { FC } from "react";
 import { Link } from "react-router-dom";
 
+import getConfig from "../../../../../src/config";
 import { ReactComponent as ClockIcon } from "src/assets/icons/clock.svg";
 import { ReactComponent as SettingIcon } from "src/assets/icons/setting.svg";
-import { ReactComponent as PolygonZkEVMLogo } from "src/assets/ternoa.svg";
 import { useEnvContext } from "src/contexts/env.context";
 import { routes } from "src/routes";
 import { areSettingsVisible } from "src/utils/feature-toggles";
@@ -14,6 +14,7 @@ import { Typography } from "src/views/shared/typography/typography.view";
 export const Header: FC = () => {
   const classes = useHeaderStyles();
   const env = useEnvContext();
+  const config = getConfig();
 
   if (!env) {
     return null;
@@ -35,7 +36,7 @@ export const Header: FC = () => {
         </Link>
       </div>
       <div className={`${classes.block} ${classes.centerBlock}`}>
-        <PolygonZkEVMLogo className={classes.logo} />
+        <img className={classes.logo} src={config?.brand.logo.dark || 'https://f005.backblazeb2.com/file/tracehawk-prod/logo/Zeeve/Dark.png'} />
       </div>
       <div className={`${classes.block} ${classes.rightBlock}`}>
         <NetworkSelector />

@@ -1,8 +1,8 @@
 import { FC, useEffect } from "react";
 import { Navigate, useLocation, useNavigate } from "react-router-dom";
 
+import getConfig from "../../../src/config";
 import { providerError } from "src/adapters/error";
-import { ReactComponent as PolygonZkEVMLogo } from "src/assets/ternoa.svg";
 import { useEnvContext } from "src/contexts/env.context";
 import { ProviderError } from "src/domain";
 import { routes } from "src/routes";
@@ -14,6 +14,7 @@ export const NetworkError: FC = () => {
   const navigate = useNavigate();
   const { state } = useLocation();
   const env = useEnvContext();
+  const config = getConfig();
 
   useEffect(() => {
     if (env) {
@@ -25,7 +26,7 @@ export const NetworkError: FC = () => {
 
   return parsedProviderError.success ? (
     <div className={classes.wrapper}>
-      <PolygonZkEVMLogo className={classes.logo} />
+      <img className={classes.logo} src={config?.brand.logo.dark || 'https://f005.backblazeb2.com/file/tracehawk-prod/logo/Zeeve/Dark.png'} />
       <div className={classes.textBox}>
         <Typography type="h1">Network Error</Typography>
         <Typography type="body1">

@@ -1,9 +1,9 @@
 import { FC, useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
+import getConfig from "../../../src/config";
 import { routerStateParser } from "src/adapters/browser";
 import { getPolicyCheck, setPolicyCheck } from "src/adapters/storage";
-import { ReactComponent as PolygonZkEVMLogo } from "src/assets/ternoa.svg";
 import { useEnvContext } from "src/contexts/env.context";
 import { useProvidersContext } from "src/contexts/providers.context";
 import { EthereumChainId, PolicyCheck, WalletName } from "src/domain";
@@ -26,6 +26,7 @@ export const Login: FC = () => {
   const { state } = useLocation();
   const { connectedProvider, connectProvider } = useProvidersContext();
   const env = useEnvContext();
+  const config = getConfig();
 
   const onConnectProvider = () => {
     setPolicyCheck();
@@ -66,7 +67,7 @@ export const Login: FC = () => {
   return (
     <div className={classes.login}>
       <div className={classes.contentWrapper}>
-        <PolygonZkEVMLogo className={classes.logo} />
+        <img className={classes.logo} src={config?.brand.logo.dark || 'https://f005.backblazeb2.com/file/tracehawk-prod/logo/Zeeve/Dark.png'} />
         <Typography className={classes.appName} type="body1">
           {appName}
         </Typography>
