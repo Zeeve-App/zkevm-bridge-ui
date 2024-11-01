@@ -1,3 +1,7 @@
+import getConfig from "src/config";
+
+const config = getConfig();
+
 export const theme = {
   breakpoints: {
     upSm: "@media (min-width: 480px)",
@@ -5,7 +9,7 @@ export const theme = {
   hoverTransition: "all 150ms",
   maxWidth: 644,
   palette: {
-    background: "#060b19",
+    background: config?.brand.theme.secondary,
     black: "#0a0b0d",
     error: {
       light: "rgba(232,67,12,0.1)",
@@ -13,7 +17,7 @@ export const theme = {
     },
     grey: {
       dark: "#78798d",
-      light: "#000000",
+      light: config?.brand.theme.primary,
       main: "#e2e5ee",
       veryDark: "#363740",
     },
