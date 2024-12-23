@@ -56,7 +56,7 @@ export const useBridgeDetailsStyles = createUseStyles((theme: Theme) => ({
       fill: theme.palette.black,
     },
     alignItems: "center",
-    backgroundColor: theme.palette.grey.light,
+    backgroundColor: theme.palette.grey.main,
     border: "none",
     borderRadius: 8,
     cursor: "pointer",

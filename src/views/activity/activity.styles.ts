@@ -16,6 +16,7 @@ export const useActivityStyles = createUseStyles((theme: Theme) => ({
   },
   emptyMessage: {
     alignSelf: "center",
+    color: theme.palette.black,
     maxWidth: theme.maxWidth,
     padding: [50, theme.spacing(2)],
     textAlign: "center",
