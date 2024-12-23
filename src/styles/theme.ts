@@ -9,7 +9,7 @@ export const theme = {
   hoverTransition: "all 150ms",
   maxWidth: 644,
   palette: {
-    background: config?.brand.theme.secondary,
+    background: config?.brand.theme.secondary || "#060b19",
     black: "#0a0b0d",
     error: {
       light: "rgba(232,67,12,0.1)",
@@ -17,7 +17,7 @@ export const theme = {
     },
     grey: {
       dark: "#78798d",
-      light: config?.brand.theme.primary,
+      light: config?.brand.theme.primary || "#000000",
       main: "#e2e5ee",
       veryDark: "#363740",
     },
