@@ -66,7 +66,7 @@ export const useTokenListStyles = createUseStyles((theme: Theme) => ({
   searchInput: {
     background: "unset",
     border: 0,
-    color: theme.palette.white,
+    color: theme.palette.black,
     outline: 0,
     padding: [theme.spacing(2), 0],
     width: "100%",
