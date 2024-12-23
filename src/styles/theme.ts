@@ -10,7 +10,7 @@ export const theme = {
   maxWidth: 644,
   palette: {
     background: config?.brand.theme.secondary || "#060b19",
-    black: "#0a0b0d",
+    black: "#000000",
     error: {
       light: "rgba(232,67,12,0.1)",
       main: "#e8430d",
