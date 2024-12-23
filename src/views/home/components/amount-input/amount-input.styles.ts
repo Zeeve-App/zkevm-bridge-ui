@@ -7,10 +7,10 @@ export const useAmountInputStyles = createUseStyles((theme: Theme) => ({
     "&:disabled": {
       backgroundColor: "transparent",
     },
-    background: theme.palette.background,
+    background: theme.palette.grey.main,
     border: "none",
     borderRadius: 8,
-    color: theme.palette.white,
+    color: theme.palette.black,
     fontSize: "20px",
     lineHeight: "24px",
     outline: "none",
@@ -31,7 +31,7 @@ export const useAmountInputStyles = createUseStyles((theme: Theme) => ({
     padding: theme.spacing(1),
   },
   maxText: {
-    color: theme.palette.white,
+    color: theme.palette.black,
   },
   wrapper: {
     alignItems: "center",

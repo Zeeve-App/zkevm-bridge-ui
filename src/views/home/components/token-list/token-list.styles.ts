@@ -89,7 +89,7 @@ export const useTokenListStyles = createUseStyles((theme: Theme) => ({
       color: theme.palette.black,
     },
     alignItems: "center",
-    background: theme.palette.grey.light,
+    background: theme.palette.grey.main,
     border: "none",
     borderRadius: 8,
     cursor: "pointer",

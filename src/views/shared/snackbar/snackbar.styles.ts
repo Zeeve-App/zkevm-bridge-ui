@@ -4,9 +4,9 @@ import { Theme } from "src/styles/theme";
 
 export const useSnackbarStyles = createUseStyles((theme: Theme) => ({
   closeButton: {
-    "&:hover": {
-      background: theme.palette.grey.veryDark,
-    },
+    // "&:hover": {
+    //   background: theme.palette.grey.veryDark,
+    // },
     backgroundColor: "transparent",
     border: "none",
     borderRadius: "50%",

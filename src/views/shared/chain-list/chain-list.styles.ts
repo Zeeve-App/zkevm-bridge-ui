@@ -23,7 +23,7 @@ export const useListStyles = createUseStyles((theme: Theme) => ({
       marginTop: theme.spacing(1),
     },
     alignItems: "center",
-    background: theme.palette.grey.light,
+    background: theme.palette.grey.main,
     border: "none",
     borderRadius: 8,
     cursor: "pointer",
@@ -38,11 +38,14 @@ export const useListStyles = createUseStyles((theme: Theme) => ({
     width: "100%",
   },
   closeButton: {
-    "&:hover": {
-      background: theme.palette.grey.main,
-    },
+    // "& path": {
+    //   fill: "white",
+    // },
+    // "&:hover": {
+    //   background: theme.palette.grey.main,
+    // },
     alignItems: "center",
-    background: theme.palette.grey.light,
+    background: theme.palette.grey.main,
     border: 0,
     borderRadius: "50%",
     cursor: "pointer",

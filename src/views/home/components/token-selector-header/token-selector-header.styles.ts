@@ -26,11 +26,11 @@ export const useTokenSelectorHeaderStyles = createUseStyles((theme: Theme) => ({
     width: 16,
   },
   closeButton: {
-    "&:hover": {
-      background: theme.palette.grey.main,
-    },
+    // "&:hover": {
+    //   background: theme.palette.grey.main,
+    // },
     alignItems: "center",
-    background: theme.palette.grey.light,
+    background: theme.palette.grey.main,
     border: 0,
     borderRadius: "50%",
     cursor: "pointer",

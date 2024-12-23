@@ -36,9 +36,10 @@ export const useBridgeFormStyles = createUseStyles((theme: Theme) => ({
     maxWidth: theme.maxWidth,
   },
   fromChain: {
-    "&:hover": {
-      backgroundColor: theme.palette.grey.light,
-    },
+    // "&:hover": {
+    //   backgroundColor: theme.palette.grey.light,
+    //   color: theme.palette.white,
+    // },
     alignItems: "center",
     background: "none",
     border: "none",
@@ -105,6 +106,9 @@ export const useBridgeFormStyles = createUseStyles((theme: Theme) => ({
     },
   },
   tokenSelector: {
+    "&: path": {
+      fill: theme.palette.black,
+    },
     "&:hover": {
       backgroundColor: theme.palette.grey.main,
     },
@@ -115,7 +119,7 @@ export const useBridgeFormStyles = createUseStyles((theme: Theme) => ({
       fill: theme.palette.black,
     },
     alignItems: "center",
-    backgroundColor: theme.palette.grey.light,
+    backgroundColor: theme.palette.grey.main,
     border: "none",
     borderRadius: 8,
     cursor: "pointer",
@@ -124,7 +128,7 @@ export const useBridgeFormStyles = createUseStyles((theme: Theme) => ({
     // padding: [theme.spacing(1), theme.spacing(1.25)],
     transition: theme.hoverTransition,
     [theme.breakpoints.upSm]: {
-      backgroundColor: theme.palette.grey.light,
+      backgroundColor: theme.palette.grey.main,
       gap: theme.spacing(2),
       padding: [theme.spacing(1.5), theme.spacing(2)],
     },
